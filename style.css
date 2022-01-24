@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.fixed-width{
+    max-width: 1300px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left{
+    
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-start{
+    text-align-last: left;
+}
+
+.text-end{
+    text-align: right;
+}
+
+
+body,h1,h2,h3.h4,h5,h6,p,span,a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start header css 3333333 */
+
+.hader{
+    background: #000000;
+    padding: 10px 0;
+}
+
+.hader-left{}
+
+.header-left .logo {
+    display: block;
+    margin-top: 5px;
+}
+
+.header-left  img{
+    width: 100px;
+}
+
+.header-right{}
+
+.header-right ul{}
+
+.header-right ul li {
+    display: inline-block;
+    
+}
+
+.header-right ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 21px;
+    line-height: 48px;
+    position: relative;
+    
+}
+
+.header-right ul li a::after {
+    content: "";
+    position: absolute;
+    top: 66%;
+    left: 19%;
+    width: 62%;
+    height: 3%;
+    background: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    
+
+}
+
+
+.header-right ul li a:hover::after{
+ 
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* drop down ################*/
+
+.header-right{}
+
+.header-right li{
+    position: relative;
+}
+
+.header-right li ul{
+    position: absolute;
+    top: 113%;
+    left: 0;
+    width: 230px;
+    background:#000000;
+    transition: .7s;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top center;
+}
+.header-right li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+
+}
+
+.header-right li ul li:hover a{
+    background: #fff;
+    color: #000000;
+    
+
+}
+
+
+.header-right li ul li{
+    display: block;
+    
+}
+
+
+.header-right li ul a{
+    display: block;
+    position: relative;
+    transition: .6s;
+    
+}
+/* =-====header section end=========== */
+
+.banner {
+    background-image: url(./img/a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 237px 0;
+}
+.banner .banner-text{}
+.banner .banner-text h1 {
+    font-size: 51px;
+    color: #223127;
+    margin-bottom: 46px;
+    font-weight: 900;
+}
+.banner .banner-text p {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.banner .banner-button{}
+.banner .banner-button .button-1 {
+    padding: 19px 48px;
+    font-size: 17px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    background: #000;
+    color: #fff;
+    transition: .5s;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.banner .banner-button .button-1:hover{
+    background: #fff;
+    color: black;
+}
+.banner .banner-button .button-2{
+    padding: 19px 48px;
+    font-size: 17px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    background: #fff;
+    color: #000;
+    transition: .5s;
+  
+}
+.banner .banner-button .button-2:hover{
+    background:#000;
+    color: #fff;
+}
+
+/* =-====banner sction start=========== */
+
+/* about me section */
+.about {
+    background: #87a471;
+    padding: 93px 0px;
+}
+.about h1 {
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 46px;
+}
+.about .about-left{
+    width: 50%;
+}
+.about .about-left p {
+    color: #fff;
+    margin-top: 110px;
+    padding: 0 38px;
+}
+.about .about-right{
+    width: 50%;
+}
+
+.about .about-right img {
+    width: 300px;
+    margin-left: 83px;
+    margin-top: 36px;
+}
+
+
+/* about me section */
+
+
+
+
+
+/* ####### start Service section ################ */
+.service{
+    background: #606a64;
+    padding: 53px 0;
+}
+
+.services-tittle{
+    text-align: center;
+}
+
+.services-tittle h1 {
+    font-size: 46px;
+    color: #ffffffd1;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.services-tittle h1::after {
+    content: "";
+    position: absolute;
+    top: 83%;
+    left: 39%;
+    width: 21%;
+    height: 3%;
+    background: #ffffffc7;
+}
+
+.services-tittle h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.services-tittle p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.services-content{}
+
+
+.services-content .services-item {
+  
+}
+.services-item .service-box-1 {
+    width: 28%;
+    color: #000;
+    margin-top: 74px;
+    background: #fff;
+    padding: 30px 20px;
+    margin-right: 5%;
+    border-radius: 19px;
+}
+
+.text-content h1 {
+    margin-bottom: 11px;
+    font-size: 25px;
+}
+.services-item .service-box-1 .icon{
+    width: 30%;
+}
+
+.services-item .service-box-1 .icon img{}
+
+
+.services-item .text-content{
+    width: 70%;
+}
+
+
+.service-inner{}
+.service-inner .service-text{}
+.service-inner .service-text p{}
+
+
+
+
+/* ####### end service section ################ */
+
+
+
+/*  start our work section */
+.my-work{
+
+    background: #87a471;
+    padding: 40px 0;
+}
+.my-work .work-tittle{}
+.my-work .work-tittle h1 {
+    color: #ffffffd1;
+    font-size: 44px;
+    margin-top: 14px;
+}
+.my-work .work-tittle p {
+    color: #fff;
+    margin-top: 36px;
+    font-size: 23px;
+}
+
+
+.work--img-div1 {
+    width: 35%;
+    margin-top: 10%;
+    border: 2px solid #ddd;
+    margin-right: -4%;
+    margin-left: 13%;
+}
+
+.work--img-div1 .img-inner{}
+
+.work--img-div1 .img-inner img {
+    width: 450px;
+}
+
+.work--img-div1 .img-content{}
+.work--img-div1 .img-content h5 {
+    padding: 15px 0;
+    color: #4e6885;
+    font-size: 16px;
+}
+.work--img-div1 .img-content p {
+    padding-bottom: 10px;
+    font-size: 19px;
+    color: #fff;
+}
+
+/*  End our work section */
